@@ -8,7 +8,5 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: MCP_TRANSPORT
-        value: streamableHttp
     autoDeploy: true
     plan: free
