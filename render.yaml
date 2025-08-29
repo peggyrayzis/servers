@@ -1,12 +1,10 @@
 services:
   - type: web
     name: mcp-server-everything
-    runtime: node
+    runtime: docker
     repo: https://github.com/peggyrayzis/servers
     branch: main
-    rootDir: src/everything
-    buildCommand: npm install && npm run build
-    startCommand: npm run start:streamableHttp
+    dockerfilePath: src/everything/Dockerfile
     envVars:
       - key: NODE_ENV
         value: production
