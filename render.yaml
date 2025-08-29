@@ -6,13 +6,11 @@ services:
     branch: main
     rootDir: src/everything
     buildCommand: npm install && npm run build
-    startCommand: npm run start:sse
+    startCommand: npm run start:streamableHttp
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        fromGroup: web
       - key: MCP_TRANSPORT
-        value: sse
+        value: streamableHttp
     autoDeploy: true
     plan: free
