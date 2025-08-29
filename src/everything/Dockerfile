@@ -19,4 +19,4 @@ ENV NODE_ENV=production
 
 RUN npm ci --ignore-scripts --omit-dev
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "dist/streamableHttp.js"]
